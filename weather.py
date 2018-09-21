@@ -5,7 +5,7 @@ weatherSearchUrl = "https://www.climatempo.com.br/previsao-do-tempo/cidade/2710"
 
 request = requests.get(weatherSearchUrl)
 
-soup = BeautifulSoup(request.content)
+soup = BeautifulSoup(request.content, 'html.parser')
 
 city = soup.find(id='momento-localidade').text
 temp = soup.find(id='momento-temperatura').text
