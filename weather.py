@@ -53,11 +53,11 @@ def getWeatherData(citiesId, requestedUrl):
 
 
 def getCSVReport(data):
-    header = "cidade;estado;temperatura;condicao;sensacao;humidade;pressao;vento\n"
+    header = "cidade,estado,temperatura,condicao,sensacao,humidade,pressao,vento\n"
     file = open("weatherData.csv", "w", encoding="utf-8")
     file.write(header)
     for city in data:
-        file.write(";".join(city) + "\n")
+        file.write(",".join(city) + "\n")
     file.close()
 
 
