@@ -1,4 +1,4 @@
-# getWeather()
+# getWeather() :sunny::umbrella::cloud::snowflake::snowman::zap:	
 
 Python Scraping the current weather in Brazilian cities.
 
