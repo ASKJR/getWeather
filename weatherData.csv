@@ -1,0 +1,28 @@
+cidade;estado;temperatura;condicao;sensacao;humidade;pressao;vento
+Rio Branco;AC;25°;Alguma nebulosidade;25°;74%;986 hPa;4km/h 
+Maceió;AL;20°;Alguma nebulosidade;20°;94%;1011 hPa;2km/h 
+Macapá;AP;26°;Poucas nuvens;28°;94%;1010 hPa;9km/h 
+Manaus;AM;26°;Alguma nebulosidade;28°;84%;1004 hPa;4km/h 
+Salvador;BA;25°;Poucas nuvens;25°;83%;1014 hPa;13km/h 
+Fortaleza;CE;26°;Muitas nuvens;28°;79%;1010 hPa;22km/h 
+Brasília;DF;18°;Alguma nebulosidade;18°;94%;898 hPa;6km/h 
+Vitória;ES;24°;Muitas nuvens;24°;83%;1008 hPa;15km/h 
+Goiânia;GO;23°;Alguma nebulosidade;23°;73%;918 hPa;4km/h 
+São Luís;MA;26°;Alguma nebulosidade;28°;84%;1009 hPa;15km/h 
+Cuiabá;MT;28°;Muitas nuvens;28°;51%;989 hPa;6km/h 
+Campo Grande;MS;24°;Alguma nebulosidade;24°;74%;947 hPa;13km/h 
+Belo Horizonte;MG;18°;Alguma nebulosidade;18°;83%;904 hPa;4km/h 
+Belém;PA;25°;Alguma nebulosidade;25°;89%;1010 hPa;15km/h 
+João Pessoa;PB;22°;Alguma nebulosidade;22°;94%;1011 hPa;9km/h 
+Curitiba;PR;16°;Nevoeiro;16°;100%;913 hPa;6km/h 
+Recife;PE;25°;Alguma nebulosidade;25°;78%;1012 hPa;19km/h 
+Teresina;PI;26°;Alguma nebulosidade;27°;70%;995 hPa;11km/h 
+Rio de Janeiro;RJ;22°;Poucas nuvens;22°;78%;1006 hPa;7km/h 
+Natal;RN;24°;Poucas nuvens;24°;83%;1012 hPa;9km/h 
+Porto Alegre;RS;20°;Alguma nebulosidade;20°;94%;1009 hPa;4km/h 
+Porto Velho;RO;23°;Trovoada;23°;94%;997 hPa;6km/h 
+Boa Vista;RR;27°;Alguma nebulosidade;29°;74%;998 hPa;6km/h 
+Florianópolis;SC;20°;Muitas nuvens;20°;94%;1013 hPa;13km/h 
+São Paulo;SP;18°;Muitas nuvens;18°;94%;921 hPa;4km/h 
+Aracaju;SE;25°;Alguma nebulosidade;25°;74%;1010 hPa;13km/h 
+Palmas;TO;24°;Alguma nebulosidade;24°;57%;980 hPa;56km/h 
