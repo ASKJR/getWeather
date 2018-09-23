@@ -3,10 +3,12 @@ import weather as w
 # user actions
 
 
-def getUserAction(availableOperations):
+def getUserAction(availableOperations=None):
     while True:
         try:
             operation = int(input())
+            if availableOperations is None:
+                return operation
             if operation in availableOperations:
                 return operation
             else:
@@ -15,39 +17,75 @@ def getUserAction(availableOperations):
             print('You must type a valid number!')
 
 
-while True:
-    print('Type a number:\n(1) - Select a city by ID\n(2) - Select all capitals\n(3) - Exit')
+def loadingData(citiesId):
+    print('Loading data...')
 
-    operation = getUserAction([1, 2, 3])
+    data = w.getWeatherData(citiesId, w.c.CONST_CITY_WEATHER_BASE_URL)
 
-    # (1) specific city id
-    if operation == 1:
-        # todo
-        print('Type a number:')
-        # availableCitiesIds = []
-        # availableCitiesIds.extend(range(1, w.c.CONST_BRAZILIAN_CITIES_TOTAL + 1))
+    return data
 
-        # operation = getUserAction(availableCitiesIds)
-    # (2) all capitals of Brazil
-    elif operation == 2:
-        print('Loading data...')
 
-        data = w.getWeatherData(w.c.CONST_BRAZILIAN_STATE_CAPITAL, w.c.CONST_CITY_WEATHER_BASE_URL)
+def printData(data):
+    w.printWeatherData(data)
+    print('Completed successfully.\n\n')
 
-        print('Your data is ready! What do you want to do?\n(1) - Print\n(2) - Export CSV')
 
-        reportOption = getUserAction([1, 2])
+def exportDataCSV(data):
+    w.getCSVReport(data)
+    print('Sucessfully exported.\n\n')
 
-        # data list operations:
-        # (1) print in terminal
-        if reportOption == 1:
-            w.printWeatherData(data)
-            print('Completed successfully.\n\n')
-        # (2) export to CSV
-        else:
-            w.getCSVReport(data)
-            print('Sucessfully exported.\n\n')
-    # (3) Exit program
+
+def outputDataToUser(data):
+
+    print('Your data is ready! What do you want to do?\n(1) - Print\n(2) - Export CSV')
+
+    reportOption = getUserAction([1, 2])
+
+    # (1) print in terminal
+    if reportOption == 1:
+        printData(data)
+    # (2) export to CSV
     else:
-        print('Bye.')
-        break
+        exportDataCSV(data)
+
+
+def runGetWeather():
+
+    print('--------------getWeather()--------------\n')
+
+    while True:
+        print('Type a number:\n(1) - Select a city by ID\n(2) - Select all capitals\n(3) - Exit')
+
+        action = getUserAction([1, 2, 3])
+
+        # (1) specific city id
+        if action == 1:
+
+            print('Type city ID:')
+
+            cityId = getUserAction()
+
+            data = loadingData([str(cityId)])
+
+            if data:
+                outputDataToUser(data)
+            else:
+                print('No data available.\n\n')
+
+        # (2) all capitals of Brazil
+        elif action == 2:
+
+            data = loadingData(w.c.CONST_BRAZILIAN_STATE_CAPITAL)
+
+            if data:
+                outputDataToUser(data)
+            else:
+                print('No data available.\n\n')
+
+        # (3) Exit program
+        else:
+            print('Bye.')
+            break
+
+
+runGetWeather()

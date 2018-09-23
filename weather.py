@@ -11,6 +11,10 @@ def getRequestContent(url):
     c.request = requests.get(url).content
 
 
+def isCityWeatherDataAvailable():
+    return c.soup.find(id=c.CONST_WEATHER_BOX_ID)
+
+
 def getCity():
     return c.soup.find(id=c.CONST_LOCALITY_ID).text.split('-')[0].strip()
 
@@ -48,7 +52,8 @@ def getWeatherData(citiesId, requestedUrl):
     for cityId in citiesId:
         getRequestContent(requestedUrl + cityId)
         setBeautifulSoup()
-        weather.append([getCity(), getState(), getTemperature(), getWeatherCondition(), getRealFeel(), getHumidity(), getPressure(), getWindSpeed()])
+        if isCityWeatherDataAvailable():
+            weather.append([getCity(), getState(), getTemperature(), getWeatherCondition(), getRealFeel(), getHumidity(), getPressure(), getWindSpeed()])
     return weather
 
 

@@ -5,6 +5,7 @@ CONST_REAL_FEEL_ID = 'momento-sensacao'
 CONST_HUMIDITY_ID = 'momento-humidade'
 CONST_PRESSURE_ID = 'momento-pressao'
 CONST_WIND_SPEED_ID = 'momento-vento'
+CONST_WEATHER_BOX_ID = 'current-weather-row'
 CONST_BRAZILIAN_STATE_CAPITAL = ['6', '8', '39', '25', '56', '60', '61', '84', '88', '94', '218', '212', '107', '232', '256', '271', '259', '264', '321', '334', '363', '343', '347', '377', '558', '384', '593']
 CONST_CITY_WEATHER_BASE_URL = "https://www.climatempo.com.br/previsao-do-tempo/cidade/"
 soup = None

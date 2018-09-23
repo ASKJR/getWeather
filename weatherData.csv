@@ -1,28 +1,28 @@
 cidade,estado,temperatura,condicao,sensacao,humidade,pressao,vento
-Rio Branco,AC,24°,Alguma nebulosidade,24°,83%,986 hPa,9km/h 
-Maceió,AL,20°,Muitas nuvens,20°,94%,1011 hPa,6km/h 
-Macapá,AP,26°,Poucas nuvens,28°,94%,1010 hPa,9km/h 
-Manaus,AM,24°,Alguma nebulosidade,24°,70%,1004 hPa,7km/h 
-Salvador,BA,25°,Poucas nuvens,25°,83%,1014 hPa,13km/h 
-Fortaleza,CE,26°,Poucas nuvens,28°,84%,1009 hPa,22km/h 
-Brasília,DF,17°,Muitas nuvens,17°,94%,898 hPa,6km/h 
-Vitória,ES,24°,Muitas nuvens,24°,83%,1008 hPa,4km/h 
-Goiânia,GO,23°,Alguma nebulosidade,23°,73%,917 hPa,4km/h 
-São Luís,MA,25°,Alguma nebulosidade,25°,89%,1009 hPa,13km/h 
-Cuiabá,MT,28°,Alguma nebulosidade,29°,55%,989 hPa,7km/h 
-Campo Grande,MS,23°,Alguma nebulosidade,23°,69%,947 hPa,13km/h 
-Belo Horizonte,MG,18°,Alguma nebulosidade,18°,83%,904 hPa,4km/h 
-Belém,PA,24°,Alguma nebulosidade,24°,100%,1010 hPa,13km/h 
-João Pessoa,PB,22°,Muitas nuvens,22°,74%,1011 hPa,27km/h 
-Curitiba,PR,16°,Nevoeiro,16°,100%,912 hPa,4km/h 
-Recife,PE,25°,Alguma nebulosidade,25°,74%,1012 hPa,17km/h 
-Teresina,PI,26°,Alguma nebulosidade,27°,70%,995 hPa,11km/h 
-Rio de Janeiro,RJ,22°,Poucas nuvens,22°,83%,1006 hPa,4km/h 
-Natal,RN,24°,Poucas nuvens,24°,83%,1011 hPa,9km/h 
-Porto Alegre,RS,19°,Alguma nebulosidade,19°,100%,1008 hPa,4km/h 
-Porto Velho,RO,23°,Trovoada,23°,94%,997 hPa,4km/h 
-Boa Vista,RR,27°,Alguma nebulosidade,29°,74%,998 hPa,6km/h 
-Florianópolis,SC,20°,Alguma nebulosidade,20°,94%,1013 hPa,13km/h 
-São Paulo,SP,16°,Névoa úmida,16°,100%,921 hPa,4km/h 
-Aracaju,SE,24°,Alguma nebulosidade,24°,74%,1010 hPa,11km/h 
-Palmas,TO,24°,Alguma nebulosidade,24°,57%,980 hPa,7km/h 
+Rio Branco,AC,25°,Alguma nebulosidade,25°,78%,984 hPa,11km/h 
+Maceió,AL,21°,Alguma nebulosidade,21°,94%,1010 hPa,4km/h 
+Macapá,AP,28°,Poucas nuvens,32°,79%,1008 hPa,22km/h 
+Manaus,AM,28°,Alguma nebulosidade,31°,70%,1002 hPa,7km/h 
+Salvador,BA,26°,Poucas nuvens,28°,79%,1013 hPa,17km/h 
+Fortaleza,CE,26°,Alguma nebulosidade,28°,84%,1009 hPa,13km/h 
+Brasília,DF,19°,Alguma nebulosidade,19°,78%,898 hPa,6km/h 
+Vitória,ES,24°,Muitas nuvens,24°,83%,1008 hPa,11km/h 
+Goiânia,GO,27°,Alguma nebulosidade,27°,45%,916 hPa,7km/h 
+São Luís,MA,26°,Alguma nebulosidade,28°,84%,1009 hPa,17km/h 
+Cuiabá,MT,29°,Alguma nebulosidade,30°,51%,986 hPa,11km/h 
+Campo Grande,MS,24°,Poucas nuvens,24°,69%,945 hPa,9km/h 
+Belo Horizonte,MG,23°,Alguma nebulosidade,23°,61%,903 hPa,13km/h 
+Belém,PA,26°,Alguma nebulosidade,28°,84%,1009 hPa,11km/h 
+João Pessoa,PB,22°,Alguma nebulosidade,22°,88%,1011 hPa,9km/h 
+Curitiba,PR,18°,Poucas nuvens,18°,100%,912 hPa,7km/h 
+Recife,PE,25°,Alguma nebulosidade,25°,78%,1011 hPa,15km/h 
+Teresina,PI,31°,Alguma nebulosidade,32°,49%,994 hPa,20km/h 
+Rio de Janeiro,RJ,23°,Alguma nebulosidade,23°,78%,1010 hPa,15km/h 
+Natal,RN,24°,Poucas nuvens,24°,78%,1012 hPa,9km/h 
+Porto Alegre,RS,22°,Alguma nebulosidade,22°,94%,1003 hPa,6km/h 
+Porto Velho,RO,24°,Trovoada,24°,89%,996 hPa,2km/h 
+Boa Vista,RR,29°,Alguma nebulosidade,31°,62%,998 hPa,6km/h 
+Florianópolis,SC,21°,Alguma nebulosidade,21°,88%,1012 hPa,22km/h 
+São Paulo,SP,18°,Alguma nebulosidade,18°,88%,925 hPa,6km/h 
+Aracaju,SE,26°,Alguma nebulosidade,27°,65%,1009 hPa,15km/h 
+Palmas,TO,28°,Alguma nebulosidade,28°,48%,978 hPa,6km/h 
