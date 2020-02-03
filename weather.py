@@ -12,7 +12,7 @@ def getRequestContent(url):
 
 
 def isCityWeatherDataAvailable():
-    return c.soup.find("p", class_=c.CONST_CONDITION_CLASS)
+    return c.soup.find("span", class_=c.CONST_LOCALITY_CLASS)
 
 
 def getCity():
@@ -29,7 +29,10 @@ def getTemperature():
 
 
 def getRain():
-    return c.soup.find("p", class_=c.CONST_CONDITION_CLASS).text.strip()
+    rainP = c.soup.find("p", class_=c.CONST_CONDITION_CLASS)
+    if rainP is not None:
+        return rainP.text.strip()
+    return ""
 
 
 def getRealFeel():
@@ -37,7 +40,11 @@ def getRealFeel():
 
 
 def getHumidity():
-    return c.soup.find("div", class_=c.CONST_INFO_BOX_CLASS).find_all("p", class_="-gray")[2].text.strip()
+    box = c.soup.find("div", class_=c.CONST_INFO_BOX_CLASS).find_all("p", class_="-gray")
+    print(len(box))
+    if len(box) == 4:
+        return box[2].text.strip()
+    return box[1].text.strip()
 
 
 def getSunrise():
@@ -45,7 +52,10 @@ def getSunrise():
 
 
 def getWindSpeed():
-    return c.soup.find("div", class_=c.CONST_INFO_BOX_CLASS).find_all("p", class_="-gray")[3].text.strip()
+    box = c.soup.find("div", class_=c.CONST_INFO_BOX_CLASS).find_all("p", class_="-gray")
+    if len(box) == 4:
+        return box[3].text.strip()
+    return box[2].text.strip()
 
 
 def getWeatherData(citiesId, requestedUrl):
