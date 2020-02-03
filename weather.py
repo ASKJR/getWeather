@@ -41,7 +41,6 @@ def getRealFeel():
 
 def getHumidity():
     box = c.soup.find("div", class_=c.CONST_INFO_BOX_CLASS).find_all("p", class_="-gray")
-    print(len(box))
     if len(box) == 4:
         return box[2].text.strip()
     return box[1].text.strip()
